@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>MindConnect</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <img src="img/logo.png" alt="MindConnect Logo" class="logo">
+        <img src="img/logo.png" alt="MindConnect Logo" class="logo" />
         <nav>
             <a href="#">Головна</a> |
             <a href="#">Контакти</a> |
@@ -20,58 +20,78 @@
 
     <main>
         <div class="content-wrapper">
-            <img src="img/yoga.png" alt="Meditating character" class="left-img">
+            <img src="img/yoga.png" alt="Meditating character" class="left-img" />
 
-            <div class="welcome-box">
-                <p>
-                    Вітаємо вас на платформі <strong>MindConnect</strong> – вашому<br>
-                    надійному партнері у пошуку професійної психологічної<br>
-                    підтримки онлайн!<br><br>
-                    Залишайтеся з нами, і разом ми знайдемо рішення, яке<br>
-                    підходить саме вам!
-                </p>
-                <div class="slider">
-                    <span class="arrow">←</span>
-                    <span class="dots">● ● ●</span>
-                    <span class="arrow">→</span>
+            <div class="main-block">
+                <div class="slider-box">
+                    <div class="slide active">
+                        <img src="img/slide1.png" alt="Slide 1" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide2.png" alt="Slide 2" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide3.png" alt="Slide 3" />
+                    </div>
                 </div>
-                <button class="cta-button">Підібрати спеціаліста</button>
+
+                <div class="slider-controls">
+                    <span class="arrow" id="prev">←</span>
+                    <span class="dots">● ● ●</span>
+                    <span class="arrow" id="next">→</span>
+                </div>
+
+                <div class="button-wrapper">
+                    <button class="cta-button">Підібрати спеціаліста</button>
+                </div>
             </div>
 
-            <img src="img/doctor.png" alt="Psychologist" class="right-img">
+            <img src="img/doctor.png" alt="Psychologist" class="right-img" />
         </div>
     </main>
 
     <footer>
-  <div class="footer-section left">
-    <p><strong>Сторінки</strong><br>
-    Методи<br>
-    Усі фахівці<br>
-    Послуги<br>
-    Популярні теми</p>
-  </div>
+        <div class="footer-section left">
+            <p><strong>Сторінки</strong><br>Методи<br>Усі фахівці<br>Послуги<br>Популярні теми</p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-section center">
+            <p><strong>Зв’язатися з нами:</strong><br>
+                📧 mindconnect@gmail.com<br>
+                📞 +380997895514<br>
+                📍 Київ, вул. Центральна, 21, корпус 2</p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-section right">
+            <p><strong>Знайти нас можна тут:</strong></p>
+            <div class="social-icons">
+                <img src="icon/telegram.svg" alt="Telegram" />
+                <img src="icon/tiktok.svg" alt="TikTok" />
+                <img src="icon/instagram.svg" alt="Instagram" />
+            </div>
+        </div>
+    </footer>
 
-  <div class="footer-divider"></div>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        let currentSlide = 0;
 
-  <div class="footer-section center">
-    <p><strong>Зв’язатися з нами:</strong><br>
-      <span>📧</span> mindconnect@gmail.com<br>
-      <span>📞</span> +380997895514<br>
-      <span>📍</span> Київ, вул. Центральна, 21, корпус 2
-    </p>
-  </div>
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
 
-  <div class="footer-divider"></div>
+        prev.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        });
 
-  <div class="footer-section right">
-    <p><strong>Знайти нас можна тут:</strong></p>
-    <div class="social-icons">
-      <img src="icon/telegram.svg" alt="Telegram">
-      <img src="icon/tiktok.svg" alt="TikTok">
-      <img src="icon/instagram.svg" alt="Instagram">
-    </div>
-  </div>
-</footer>
-
+        next.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        });
+    </script>
 </body>
 </html>
