@@ -41,7 +41,6 @@ nav a {
 }
 
 main {
-    background-image: url('img/background.png');
     background-size: cover;
     padding: 200px;
 }
