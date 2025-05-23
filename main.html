@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+    </div>
     <header>
         <img src="img/logo.png" alt="MindConnect Logo" class="logo" />
         <nav>
@@ -15,44 +17,37 @@
             <a href="#">Послуги</a> |
             <a href="#">Про нас</a>
         </nav>
-        <div class="profile-icon">👤</div>
+        <a href="profile.html" class="profile-icon">👤</a>
     </header>
-
     <main>
         <div class="content-wrapper">
             <img src="img/yoga.png" alt="Meditating character" class="left-img" />
-
             <div class="main-block">
                 <div class="slider-box">
-                    <div class="slide active">
-                        <img src="img/slide1.png" alt="Slide 1" />
-                    </div>
-                    <div class="slide">
-                        <img src="img/slide2.png" alt="Slide 2" />
-                    </div>
-                    <div class="slide">
-                        <img src="img/slide3.png" alt="Slide 3" />
-                    </div>
+                    <div class="slide active"><img src="img/slide1.png" alt="Slide 1" /></div>
+                    <div class="slide"><img src="img/slide2.png" alt="Slide 2" /></div>
+                    <div class="slide"><img src="img/slide3.png" alt="Slide 3" /></div>
                 </div>
-
                 <div class="slider-controls">
-                    <span class="arrow" id="prev">←</span>
+                    <span class="arrow" id="prev">⇦</span>
                     <span class="dots">● ● ●</span>
-                    <span class="arrow" id="next">→</span>
+                    <span class="arrow" id="next">⇨</span>
                 </div>
-
                 <div class="button-wrapper">
                     <button class="cta-button">Підібрати спеціаліста</button>
                 </div>
             </div>
-
             <img src="img/doctor.png" alt="Psychologist" class="right-img" />
         </div>
     </main>
 
     <footer>
         <div class="footer-section left">
-            <p><strong>Сторінки</strong><br>Методи<br>Усі фахівці<br>Послуги<br>Популярні теми</p>
+            <p><strong>Сторінки</strong></p>
+            <a href="methods.html">Методи</a>
+            <a href="specialists.html">Усі фахівці</a>
+            <a href="services.html">Послуги</a>
+            <a href="topics.html">Популярні теми</a>
         </div>
         <div class="footer-divider"></div>
         <div class="footer-section center">
@@ -72,26 +67,6 @@
         </div>
     </footer>
 
-    <script>
-        const slides = document.querySelectorAll('.slide');
-        const prev = document.getElementById('prev');
-        const next = document.getElementById('next');
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            slides[index].classList.add('active');
-        }
-
-        prev.addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        });
-
-        next.addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        });
-    </script>
+    
 </body>
 </html>
