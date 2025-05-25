@@ -1,0 +1,207 @@
+body {
+  background: #f4f1fa;
+  font-family: "Comic Sans MS", cursive;
+  margin: 0;
+}
+
+header {
+  background-color: #c2bfe4;
+  padding: 10px 30px;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: auto 1fr auto;
+}
+
+nav {
+  margin-left: 530px;
+  margin-top: 10px;
+}
+
+.logo {
+  height: 70px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile-icon {
+  font-size: 24px;
+}
+
+main {
+  background-size: cover;
+  padding: 50px 20px;
+  max-height: 70vh;
+  overflow: auto; 
+}
+
+/* --- Профіль --- */
+.profile-card {
+  background: white;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.profile-photo {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info-icons {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 90px;
+}
+
+.tags {
+  margin-top: 15px;
+}
+
+.tag {
+  background-color: #d6d2f3;
+  padding: 6px 12px;
+  border-radius: 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  display: inline-block;
+  color: #333;
+}
+
+/* --- Сертифікати --- */
+.certificates {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.certificates h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.cert-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.cert-list img {
+  height: 180px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* --- Кнопки --- */
+.cert-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.left-button, .right-button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Comic Sans MS", cursive;
+  transition: background 0.3s;
+}
+
+.left-button {
+  background-color: #ad72ca;
+  color: black;
+}
+
+.right-button {
+  background-color: #ad72ca;
+  color: black;
+}
+
+.right-button:hover,
+.left-button:hover {
+  background-color: #7d3593;
+}
+
+/* --- Footer --- */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #c2bfe4;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #3c3c3c;
+  border-top: 2px solid #b6a7d0;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-divider {
+  width: 3px;
+  background-color: #a486cc;
+  height: 100px;
+  align-self: center;
+}
+
+.footer-section p {
+  line-height: 1.8;
+}
+
+.footer-section.right .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-section.right img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.footer-section.right img:hover {
+  transform: scale(1.1);
+}
