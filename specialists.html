@@ -26,53 +26,8 @@
       <select><option>Підхід</option></select>
       <select><option>Мова</option></select>
     </div>
-
-    <!-- Психолог 1 -->
-    <div class="specialist-card">
-      <img src="img/psych1.jpg" alt="Кристина" />
-      <div class="specialist-info">
-        <div class="specialist-name">Кристина Височанська</div>
-        <p>Психолог, Психіатр</p>
-        <div class="info-icons">
-         📅 10 років досвіду<br>
-         🌐 Українська, Англійська мова<br>
-         ❤️ 219 сесій / 23 відгуки
-        </div>
-        <div class="specialist-tags">
-          <span class="tag">Депресивні стани</span>
-          <span class="tag">Панічні атаки</span>
-          <span class="tag">+7</span>
-        </div>
-      </div>
-      <div>
-        <div class="price">2100 грн</div>
-        <a href="psychologist.html" class="cta-button">Детальніше</a>
-      </div>
-    </div>
-
-    <!-- Психолог 2 -->
-    <div class="specialist-card">
-      <img src="img/psych2.jpg" alt="Артем" />
-      <div class="specialist-info">
-        <div class="specialist-name">Артем Ковалюк</div>
-        <p>Психолог</p>
-        <div class="info-icons">
-         📅 5 років досвіду<br>
-         🌐 Українська мова<br>
-         ❤️ 154 сесій / 15 відгуки
-        </div>
-
-        <div class="specialist-tags">
-          <span class="tag">Сімейні стосунки</span>
-          <span class="tag">Аб’юз, емоційне насилля</span>
-          <span class="tag">+5</span>
-        </div>
-      </div>
-      <div>
-        <div class="price">1400 грн</div>
-        <a href="psychologist.html" class="cta-button">Детальніше</a>
-      </div>
-    </div>
+    
+    <div id="specialists-list"></div>
   </main>
 
   <footer>
@@ -96,5 +51,6 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/loadSpecialists.js"></script>
 </body>
 </html>
