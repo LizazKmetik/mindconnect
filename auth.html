@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Авторизація | MindConnect</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .corner-logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 80px;
+  z-index: 100;
+}
+
+
+    .left-panel {
+      position: relative;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+      background-color: transparent;
+    }
+
+    .animated-bg {
+      position: absolute;
+      top: -20%;
+      left: -20%;
+      width: 160%;
+      height: 160%;
+      background: url('img/lavender-watercolor.jpg') no-repeat center center;
+      background-size: cover;
+      animation: floatBackground 30s ease-in-out infinite;
+      z-index: 0;
+    }
+
+    @keyframes floatBackground {
+      0% { transform: scale(1) translate(0px, 0px); }
+      25% { transform: scale(1.05) translate(10px, -10px); }
+      50% { transform: scale(1.1) translate(0px, 10px); }
+      75% { transform: scale(1.05) translate(-10px, -10px); }
+      100% { transform: scale(1) translate(0px, 0px); }
+    }
+
+    .left-panel-content {
+      position: relative;
+      z-index: 1;
+      padding: 40px;
+      color: #2c2c2c;
+    }
+
+    .left-panel-content img.logo {
+      width: 100px;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .left-panel-content .welcome-text {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .right-panel {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .auth-container {
+      width: 360px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    .auth-tabs {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .auth-tabs button {
+      background: #ccc;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .auth-tabs button.active {
+      background: #8e44ad;
+      color: white;
+    }
+
+    .auth-form {
+      display: none;
+    }
+
+    .auth-form.active {
+      display: block;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-btn {
+      background-color: #8e44ad;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .welcome-box {
+  background-color: rgba(255, 255, 255, 0.6); /* білий напівпрозорий фон */
+  border: 2px solid white;                   /* біла рамка */
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 440px;
+  margin: 10px auto 0;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.social-login {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.google-btn,
+.facebook-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+
+.google-btn {
+  background-color: #ffffff;
+  color: #444;
+  border: 1px solid #ddd;
+}
+
+.google-btn::before {
+  content: "🟢 ";
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+  color: white;
+}
+
+
+  </style>
+</head>
+<body>
+
+    <img src="img/logo.png" class="corner-logo" alt="MindConnect Logo">
+    
+<!-- Ліва частина з анімованим фоном -->
+<div class="left-panel">
+    
+  <div class="animated-bg"></div>
+  <div class="left-panel-content">
+    
+  <div class="welcome-box">
+    <p>Вітаємо вас на платформі <strong>MindConnect</strong> – вашому надійному партнері у пошуку професійної психологічної підтримки онлайн!</p>
+    <p>Залишайтеся з нами, і разом ми знайдемо рішення, яке підходить саме вам!</p>
+  </div>
+  </div>
+</div>
+
+
+<!-- Права частина -->
+<div class="right-panel">
+  <div class="auth-container">
+    <div class="auth-tabs">
+      <button id="loginTab" class="active" onclick="showForm('login')">Увійти</button>
+      <button id="registerTab" onclick="showForm('register')">Реєстрація</button>
+    </div>
+
+    <div id="loginForm" class="auth-form active">
+      <form action="login.php" method="post">
+        <input type="text" name="username" placeholder="Логін" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <button type="submit" class="submit-btn">Увійти</button>
+      </form>
+    </div>
+
+    <div class="social-login">
+  <button class="google-btn">🔵 Увійти через Google</button>
+  <button class="facebook-btn">🔷 Увійти через Facebook</button>
+</div>
+
+
+    <div id="registerForm" class="auth-form">
+      <form action="register.php" method="post">
+        <input type="text" name="username" placeholder="Логін" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <button type="submit" class="submit-btn">Зареєструватися</button>
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showForm(formType) {
+    document.getElementById('loginForm').classList.remove('active');
+    document.getElementById('registerForm').classList.remove('active');
+    document.getElementById('loginTab').classList.remove('active');
+    document.getElementById('registerTab').classList.remove('active');
+
+    if (formType === 'login') {
+      document.getElementById('loginForm').classList.add('active');
+      document.getElementById('loginTab').classList.add('active');
+    } else {
+      document.getElementById('registerForm').classList.add('active');
+      document.getElementById('registerTab').classList.add('active');
+    }
+  }
+</script>
+
+</body>
+</html>
