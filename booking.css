@@ -1,0 +1,161 @@
+/* Центрований хедер */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c2bfe4;
+  padding: 10px 40px;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-center {
+  position: absolute;
+  left: 4%;
+  transform: translateX(-0%);
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+
+.user-icon {
+  font-size: 20px;
+}
+
+/* Заголовок "Запис" */
+.booking-title-box {
+  background-color: white;
+  padding: 20px 40px;
+  margin: 40px auto 20px;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-title-box h2 {
+  margin: 0;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Кнопки днів та часу */
+.day-selector,
+.time-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.day,
+.time {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.day.active,
+.time.selected {
+  background-color: #8e44ad;
+  color: white;
+  border-color: #8e44ad;
+}
+
+.booking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Напівпрозорі блоки */
+.booking-form {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.personal-data,
+.payment-data {
+  background-color: rgba(198, 174, 255, 0.25);
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 300px;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.personal-data h3,
+.payment-data h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.personal-data input,
+.payment-data input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.submit-booking {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 30px;
+  background-color: #8e44ad;
+  color: rgb(7, 2, 2);
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-booking:hover {
+  background-color: #732d91;
+}
+
+/* Footer */
+footer.footer {
+  background-color: #c2bfe4;
+  color: #333;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-family: 'Segoe UI', sans-serif;
+}

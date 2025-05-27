@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Запис на сесію | MindConnect</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="img/logo.png" alt="MindConnect Logo" class="logo-img">
+      <span class="logo-text"></span>
+    </div>
+
+    <div class="nav-center">
+      <nav>
+        <a href="main.html">Головна</a> |
+        <a href="#">Контакти</a> |
+        <a href="#">Послуги</a> |
+        <a href="#">Про нас</a>
+      </nav>
+    </div>
+
+    <div class="user-icon">👤</div>
+  </header>
+
+  <main class="booking-container">
+    <div class="booking-title-box">
+      <h2>Запис на прийом</h2>
+    </div>
+
+    <div class="day-selector">
+      <button class="day" data-day="Пн">Пн</button>
+      <button class="day" data-day="Вт">Вт</button>
+      <button class="day" data-day="Ср">Ср</button>
+      <button class="day" data-day="Чт">Чт</button>
+      <button class="day" data-day="Пт">Пт</button>
+      <button class="day" data-day="Сб">Сб</button>
+      <button class="day" data-day="Нд">Нд</button>
+    </div>
+
+    <div class="time-selector">
+      <button class="time" data-time="10:30">10:30</button>
+      <button class="time" data-time="11:30">11:30</button>
+      <button class="time" data-time="12:30">12:30</button>
+      <button class="time" data-time="13:30">13:30</button>
+      <button class="time" data-time="14:30">14:30</button>
+    </div>
+
+    <section class="booking-form">
+      <div class="personal-data">
+        <h3>Особисті дані</h3>
+        <input type="text" id="fullname" placeholder="Прізвище Ім’я По батькові">
+        <input type="text" id="phone" placeholder="Номер телефону">
+        <input type="email" id="email" placeholder="Електронна пошта">
+      </div>
+
+      <div class="payment-data">
+        <h3>Оплата</h3>
+        <input type="text" placeholder="Номер карти">
+        <input type="text" placeholder="Діє до">
+        <input type="text" placeholder="CVV">
+      </div>
+    </section>
+
+    <button class="submit-booking" id="bookBtn">Домовитись про сесію</button>
+  </main>
+
+  <footer class="footer">
+    <p>© Проєкт ментального комфорту MINDCONNECT, 2025</p>
+  </footer>
+
+  <script>
+    let selectedDay = null;
+    let selectedTime = null;
+
+    document.querySelectorAll(".day").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".day").forEach(b => b.classList.remove("active"));
+        button.classList.add("active");
+        selectedDay = button.dataset.day;
+        localStorage.setItem("selectedDay", selectedDay);
+      });
+    });
+
+    document.querySelectorAll(".time").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".time").forEach(b => b.classList.remove("selected"));
+        button.classList.add("selected");
+        selectedTime = button.dataset.time;
+        localStorage.setItem("selectedTime", selectedTime);
+      });
+    });
+
+    document.getElementById("bookBtn").addEventListener("click", () => {
+      const fullname = document.getElementById("fullname").value;
+      const phone = document.getElementById("phone").value;
+      const email = document.getElementById("email").value;
+
+      const bookingData = {
+        day: localStorage.getItem("selectedDay"),
+        time: localStorage.getItem("selectedTime"),
+        fullname,
+        phone,
+        email
+      };
+
+      console.log("🔔 Бронювання:", bookingData);
+    });
+  </script>
+</body>
+</html>
