@@ -1,0 +1,148 @@
+/* Загальні стилі */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eee6fa;
+  color: #3c2c72;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Хедер */
+.main-header {
+  background-color: #c2bfe4;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #3c2c72;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile-icon {
+  font-size: 30px;
+  color: #3c2c72;
+  text-decoration: none;
+}
+
+/* Основний заголовок */
+.title {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 28px;
+  color: #4b2991;
+}
+
+/* Контент */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+/* Карточка заявки */
+.card {
+  max-width: 700px;
+  background: #fff;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Коротка інформація */
+.summary p {
+  margin: 8px 0;
+}
+
+/* Кнопка розгортання */
+button.toggle {
+  background-color: #8661d1;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Деталі заявки */
+.details {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+/* Кнопки дій */
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.accept, .reject {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accept {
+  background-color: #5cb85c;
+}
+
+.reject {
+  background-color: #d9534f;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Футер */
+.main-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: #c2bfe4;
+  color: #3c2c72;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.main-footer .footer-left,
+.main-footer .footer-middle,
+.main-footer .footer-right {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+}
+
+.footer-left a {
+  display: block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: #3c2c72;
+}
+
+.social-icons img {
+  height: 30px;
+  margin-right: 10px;
+}
