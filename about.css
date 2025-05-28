@@ -1,0 +1,69 @@
+.about-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f0fa;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(153, 112, 255, 0.2);
+}
+
+.about-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6b4ca0;
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section img {
+  max-width: 100%;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.team-member {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.team-member h4 {
+  margin: 10px 0 5px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #999;
+}
+
+.mission-img {
+  width: 40%; /* зменшити */
+  max-width: 450px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.about-section ul {
+  padding-left: 25px; /* або 30px, 40px — підбирай як виглядає краще */
+}
