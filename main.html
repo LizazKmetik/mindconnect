@@ -8,17 +8,17 @@
 </head>
 <body>
 
-    </div>
     <header>
         <img src="img/logo.png" alt="MindConnect Logo" class="logo" />
         <nav>
             <a href="#">Головна</a> |
-            <a href="#">Контакти</a> |
+            <a href="vacancies.html">Вакансії</a> |
             <a href="#">Послуги</a> |
             <a href="#">Про нас</a>
         </nav>
-        <a href="profile.html" class="profile-icon">👤</a>
+        <a href="auth.html" class="profile-icon">👤</a>
     </header>
+
     <main>
         <div class="content-wrapper">
             <img src="img/yoga.png" alt="Meditating character" class="left-img" />
@@ -34,7 +34,7 @@
                     <span class="arrow" id="next">⇨</span>
                 </div>
                 <div class="button-wrapper">
-                    <button class="cta-button">Підібрати спеціаліста</button>
+                    <button class="cta-button" onclick="location.href='specialists.html'">Підібрати спеціаліста</button>
                 </div>
             </div>
             <img src="img/doctor.png" alt="Psychologist" class="right-img" />
@@ -67,6 +67,36 @@
         </div>
     </footer>
 
-    
+    <!-- 🔄 Слайдерний JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelectorAll(".slide");
+            const prevBtn = document.getElementById("prev");
+            const nextBtn = document.getElementById("next");
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove("active");
+                    if (i === index) {
+                        slide.classList.add("active");
+                    }
+                });
+            }
+
+            prevBtn.addEventListener("click", () => {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            });
+
+            nextBtn.addEventListener("click", () => {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            });
+
+            showSlide(currentSlide);
+        });
+    </script>
+
 </body>
 </html>

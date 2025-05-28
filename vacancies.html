@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Вакансії | MindConnect</title>
+  <link rel="stylesheet" href="vacancies.css" />
+</head>
+<body>
+
+  <header>
+    <img src="img/logo.png" alt="MindConnect Logo" class="logo" />
+    <nav>
+      <a href="main.html">Головна</a> |
+      <a href="vacancies.html">Вакансії</a> |
+      <a href="services.html">Послуги</a> |
+      <a href="about.html">Про нас</a>
+    </nav>
+    <a href="profile.html" class="profile-icon">👤</a>
+  </header>
+
+  <main>
+    <h1 class="page-title">Заповніть заявку на вакансію спеціаліста</h1>
+    <form class="application-form" action="#" method="post">
+      <label for="fullname">ПІБ:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="specialty">Спеціалізація:</label>
+      <input type="text" id="specialty" name="specialty" required>
+
+      <label for="experience">Стаж (років):</label>
+      <input type="number" id="experience" name="experience" min="0" required>
+
+      <label for="message">Короткий опис про себе:</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <button type="submit" class="submit-button">Відправити заявку</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-section left">
+      <p><strong>Сторінки</strong></p>
+      <a href="methods.html">Методи</a>
+      <a href="specialists.html">Усі фахівці</a>
+      <a href="services.html">Послуги</a>
+      <a href="topics.html">Популярні теми</a>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-section center">
+      <p><strong>Зв’язатися з нами:</strong><br>
+        📧 mindconnect@gmail.com<br>
+        📞 +380997895514<br>
+        📍 Київ, вул. Центральна, 21, корпус 2</p>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-section right">
+      <p><strong>Знайти нас можна тут:</strong></p>
+      <div class="social-icons">
+        <img src="icon/telegram.svg" alt="Telegram" />
+        <img src="icon/tiktok.svg" alt="TikTok" />
+        <img src="icon/instagram.svg" alt="Instagram" />
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
