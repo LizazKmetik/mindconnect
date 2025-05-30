@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Заявки психологів | MindConnect</title>
-  <link rel="stylesheet" href="admin_applications.css" />
+  <link rel="stylesheet" href="styles/admin_applications.css" />
 </head>
 <body>
 
@@ -34,37 +34,40 @@
         <p><strong>Стаж:</strong> 5 років</p>
         <p><strong>Опис:</strong> Маю досвід роботи з підлітками та дорослими. Працюю в напрямку CBT, використовую інструменти арт-терапії.</p>
         <div class="actions">
-          <button class="accept">✅ Прийняти</button>
-          <button class="reject">❌ Відхилити</button>
+          <button class="accept">👍 Прийняти</button>
+          <button class="reject">👎 Відхилити</button>
         </div>
       </div>
     </div>
 
   </main>
 
-  <footer class="main-footer">
-    <div class="footer-left">
-      <p><strong>Сторінки</strong></p>
-      <a href="methods.html">Методи</a>
-      <a href="specialists.html">Усі фахівці</a>
-      <a href="services.html">Послуги</a>
-      <a href="topics.html">Популярні теми</a>
+  <footer>
+  <div class="footer-section left">
+    <p><strong>Сторінки</strong></p>
+    <a href="methods.html">Методи</a>
+    <a href="specialists.html">Усі фахівці</a>
+    <a href="services.html">Послуги</a>
+    <a href="topics.html">Популярні теми</a>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-section center">
+    <p><strong>Зв’язатися з нами:</strong><br>
+      📧 mindconnect@gmail.com<br>
+      📞 +380997895514<br>
+      📍 Київ, вул. Центральна, 21, корпус 2</p>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-section right">
+    <p><strong>Знайти нас можна тут:</strong></p>
+    <div class="social-icons">
+      <img src="icon/telegram.svg" alt="Telegram" />
+      <img src="icon/tiktok.svg" alt="TikTok" />
+      <img src="icon/instagram.svg" alt="Instagram" />
     </div>
-    <div class="footer-middle">
-      <p><strong>Зв’язатися з нами:</strong><br>
-        📧 mindconnect@gmail.com<br>
-        📞 +380997895514<br>
-        📍 Київ, вул. Центральна, 21, корпус 2</p>
-    </div>
-    <div class="footer-right">
-      <p><strong>Знайти нас можна тут:</strong></p>
-      <div class="social-icons">
-        <img src="icon/telegram.svg" alt="Telegram">
-        <img src="icon/tiktok.svg" alt="TikTok">
-        <img src="icon/instagram.svg" alt="Instagram">
-      </div>
-    </div>
-  </footer>
+  </div>
+</footer>
+
 
   <script>
     document.querySelectorAll('.toggle').forEach(btn => {

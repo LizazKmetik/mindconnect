@@ -15,7 +15,7 @@ header {
 }
 
 .logo-img {
-  height: 40px;
+  height: 70px;
 }
 
 .logo-text {
@@ -23,28 +23,21 @@ header {
   font-size: 18px;
 }
 
-.nav-center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 nav {
-  flex-grow: 1;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 25px;
 }
 
 nav a {
   text-decoration: none;
+  color: black;
   font-weight: bold;
-  font-size: 18px;
-  color: #000;
+  font-size: 20px;
 }
 
 .user-icon {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* Заголовок "Запис" */
@@ -109,12 +102,12 @@ nav a {
 
 .personal-data,
 .payment-data {
-  background-color: rgba(198, 174, 255, 0.25);
+  background-color: #c6aeff40;
   padding: 20px;
   border-radius: 20px;
   min-width: 300px;
   flex: 1;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px #0000000d;
 }
 
 .personal-data h3,
@@ -137,17 +130,17 @@ nav a {
   display: block;
   margin: 30px auto;
   padding: 12px 30px;
-  background-color: #8e44ad;
-  color: rgb(7, 2, 2);
+  background-color: #b15fd5;
+  color: #070202;
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .submit-booking:hover {
-  background-color: #732d91;
+  background-color: #8e42ae;
 }
 
 /* Footer */

@@ -154,6 +154,24 @@ footer {
     transform: translateY(50%);
 }
 
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.star-rating span.hovered,
+.star-rating span.selected {
+  color: #ffc107;
+}
+
+.star-rating span {
+  transition: color 0.2s;
+}
+
 
 .footer-section a {
     text-decoration: none;
@@ -176,4 +194,46 @@ footer {
 
 .footer-section a:hover {
     color: #6a5acd; 
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  color: #4b2e69;
+  margin: 50px 0 20px;
+}
+
+.review-form {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-form input,
+.review-form textarea,
+.review-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #ad72ca;
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  transition: background 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #7d3593;
 }
