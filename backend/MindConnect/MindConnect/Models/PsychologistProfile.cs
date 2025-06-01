@@ -9,5 +9,8 @@
         public string Education { get; set; } = "";
         public string Certificates { get; set; } = "";
         public string ProfilePhoto { get; set; } = "";
+        public string Languages { get; set; } = "";
+        public decimal PricePerSession { get; set; }
+
     }
 }

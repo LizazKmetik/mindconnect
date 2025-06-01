@@ -7,7 +7,7 @@
         public string Languages { get; set; } = "";
         public int SessionCount { get; set; }
         public int ReviewCount { get; set; }
-        public int Price { get; set; }
+        public decimal Price { get; set; }
         public string Tags { get; set; } = "";
         public string PhotoUrl { get; set; } = "";
     }

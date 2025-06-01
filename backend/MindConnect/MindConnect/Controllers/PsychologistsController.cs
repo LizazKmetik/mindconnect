@@ -28,10 +28,10 @@ namespace MindConnect.Controllers
             {
                 Name = p.User.Name,
                 Bio = p.Profile.Bio,
-                Languages = "Українська", // заглушка
-                SessionCount = 0,
-                ReviewCount = 0,
-                Price = 0,
+                Languages = p.Profile.Languages,
+                Price = p.Profile.PricePerSession,
+                SessionCount = _context.Session.Count(s => s.PsychologistId == p.Id),
+                ReviewCount = _context.Review.Count(r => r.PsychologistId == p.Id),
                 Tags = p.Profile.Specializations,
                 PhotoUrl = p.Profile.ProfilePhoto
             });
