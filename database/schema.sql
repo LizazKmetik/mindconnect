@@ -138,3 +138,31 @@ CREATE TABLE Review (
 
 --ALTER TABLE PsychologistProfile
 --ADD PricePerSession DECIMAL(10,2);
+
+-- 1. Створимо користувача (User)
+DECLARE @UserId UNIQUEIDENTIFIER = NEWID();
+INSERT INTO Users (Id, Name, Email, Password, Role, CreatedAt, IsActive)
+VALUES (@UserId, 'Ірина Психолог', 'iryna@example.com', 'hashed_password_123', 'Psychologist', GETDATE(), 1);
+
+-- 2. Створимо профіль (PsychologistProfile)
+DECLARE @ProfileId UNIQUEIDENTIFIER = NEWID();
+INSERT INTO PsychologistProfile (Id, Bio, Languages, PricePerSession, Specializations, ExperienceYears, Education, Certificates, ProfilePhoto)
+VALUES (
+    @ProfileId,
+    N'Досвідчений психолог із практикою понад 5 років у сфері когнітивно-поведінкової терапії.',
+    N'Українська, Англійська',
+    600.00,
+    N'["Тривожність", "Депресія", "Самооцінка"]',
+    6,
+    N'Київський національний університет, факультет психології',
+    N'["cert1.jpg", "cert2.jpg"]',
+    N'/images/profiles/iryna.jpg'
+);
+
+-- 3. Створимо запис у таблиці Psychologist
+INSERT INTO Psychologist (Id, ProfileId, Verified)
+VALUES (@UserId, @ProfileId, 1);
+
+UPDATE PsychologistProfile
+SET ProfilePhoto = '/img/profiles/iryna.jpg'
+WHERE ProfilePhoto = '/images/profiles/iryna.jpg';

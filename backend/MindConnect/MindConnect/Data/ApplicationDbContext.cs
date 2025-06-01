@@ -13,6 +13,9 @@ namespace MindConnect.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Psychologist> Psychologist { get; set; }
         public DbSet<PsychologistProfile> PsychologistProfile { get; set; }
+        public DbSet<Session> Session { get; set; }
+        public DbSet<Review> Review { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

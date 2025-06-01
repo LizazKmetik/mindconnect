@@ -1,9 +1,21 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const container = document.getElementById('specialists-list');
 
+    function noResults() {
+        container.innerHTML = `
+            <div class="center-wrapper">
+                <p class="no-results">Немає результатів пошуку 😞</p>
+            </div>`;
+    }
+
     try {
         const response = await fetch('https://localhost:7253/api/psychologists');
         const data = await response.json();
+
+        if (data.length === 0) {
+            noResults();
+            return;
+        }
 
         data.forEach(p => {
             const card = document.createElement('div');
@@ -21,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </div>
                 </div>
                 <div>
-                    <div class="price">- грн</div>
+                    <div class="price">${p.price || 0} грн</div>
                     <button class="cta-button">Детальніше</button>
                 </div>
             `;
@@ -31,12 +43,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     } catch (err) {
         console.error('Помилка підключення до API:', err);
-        container.innerHTML = `
-    <div class="center-wrapper">
-        <p class="no-results">Немає результатів пошуку 😞</p>
-    </div>`;
-
-
+        noResults();
     }
 
     function parseTags(json) {
