@@ -40,6 +40,8 @@ CREATE TABLE Users (
 CREATE TABLE PsychologistProfile (
     Id UNIQUEIDENTIFIER PRIMARY KEY,
     Bio NVARCHAR(MAX),
+	Languages NVARCHAR(255),
+	PricePerSession DECIMAL(10,2),
     Specializations NVARCHAR(MAX), -- JSON array as string
     ExperienceYears INT,
     Education NVARCHAR(MAX),
@@ -129,3 +131,10 @@ CREATE TABLE Review (
     ReviewText NVARCHAR(MAX),
     CreatedAt DATETIME DEFAULT GETDATE()
 );
+
+-- якщо вже ≥снуЇ таблиц€ PsychologistProfile, виконати наступн≥ команди дл€ оновленн€
+--ALTER TABLE PsychologistProfile
+--ADD Languages NVARCHAR(255);
+
+--ALTER TABLE PsychologistProfile
+--ADD PricePerSession DECIMAL(10,2);
