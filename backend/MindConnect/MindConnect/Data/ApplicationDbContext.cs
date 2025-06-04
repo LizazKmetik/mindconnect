@@ -15,11 +15,20 @@ namespace MindConnect.Data
         public DbSet<PsychologistProfile> PsychologistProfile { get; set; }
         public DbSet<Session> Session { get; set; }
         public DbSet<Review> Review { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<User>()
+                .HasOne(u => u.RoleNavigation)
+                .WithMany(r => r.Users)
+                .HasForeignKey(u => u.Role)
+                .HasPrincipalKey(r => r.RoleName);
+
 
             modelBuilder.Entity<Psychologist>()
                 .HasOne(p => p.User)

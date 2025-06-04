@@ -9,9 +9,11 @@ namespace MindConnect.Models
         public string Name { get; set; } = null!;
         public string Email { get; set; } = null!;
         public string Password { get; set; } = null!;
-        public string Role { get; set; } = null!;
+        public string Role { get; set; } = "Client"!;
+        public UserRole RoleNavigation { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime? LastLogin { get; set; }
         public bool IsActive { get; set; } = true;
+
     }
 }

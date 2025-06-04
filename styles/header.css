@@ -1,0 +1,38 @@
+header {
+  background-color: #c2bfe4;
+  padding: 10px 30px;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: auto 1fr auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.user-menu-container,
+.user-menu-wrapper,
+.user-menu-button,
+.user-dropdown,
+.user-dropdown.show,
+.user-dropdown button,
+.login-link {
+  /* Усі ті стилі, які ми додавали раніше — перенеси сюди */
+}
