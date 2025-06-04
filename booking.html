@@ -5,25 +5,10 @@
   <title>Запис на сесію | MindConnect</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/booking.css">
+  <link rel="stylesheet" href="styles/header.css" />
 </head>
 <body>
-  <header>
-    <div class="header-left">
-      <img src="img/logo.png" alt="MindConnect Logo" class="logo-img">
-      <span class="logo-text"></span>
-    </div>
-
-    <div class="nav-center">
-      <nav>
-        <a href="main.html">Головна</a> |
-        <a href="vacancies.html">Вакансії</a> |
-        <a href="services.html">Послуги</a> |
-        <a href="about.html">Про нас</a>
-      </nav>
-    </div>
-
-    <a href="auth.html" class="profile-icon">👤</a>
-  </header>
+  <div id="header-placeholder"></div>
 
   <main class="booking-container">
     <div class="booking-title-box">
@@ -109,5 +94,7 @@
       console.log("🔔 Бронювання:", bookingData);
     });
   </script>
+
+  <script src="scripts/loadHeader.js"></script>
 </body>
 </html>

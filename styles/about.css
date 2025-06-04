@@ -50,14 +50,16 @@
 }
 
 .footer {
+  background-color: #c2bfe4;
+  color: #333;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #999;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .mission-img {
-  width: 40%; /* зменшити */
+  width: 40%; 
   max-width: 450px;
   display: block;
   margin: 20px auto;
@@ -65,5 +67,5 @@
 }
 
 .about-section ul {
-  padding-left: 25px; /* або 30px, 40px — підбирай як виглядає краще */
+  padding-left: 25px; 
 }

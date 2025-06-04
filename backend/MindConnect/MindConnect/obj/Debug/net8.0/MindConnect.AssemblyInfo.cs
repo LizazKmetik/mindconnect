@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MindConnect")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51e6fe70fb3f2c45f243090055fc019ac278359b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4befa3a9651dfda60d363e7fe670d79364ca7e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("MindConnect")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MindConnect")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
