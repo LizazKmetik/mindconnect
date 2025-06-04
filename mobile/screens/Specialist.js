@@ -44,7 +44,6 @@ const specialistsData = [
     approach: "Психодинамічний",
     language: "Англійська",
   },
-  // ... додай інших спеціалістів тут
 ];
 
 function Dropdown({ label, options, selected, onSelect }) {
@@ -99,7 +98,6 @@ export default function Specialists() {
   const [selectedApproach, setSelectedApproach] = useState("Всі");
   const [selectedLanguage, setSelectedLanguage] = useState("Всі");
 
-  // Фільтрація фахівців за всіма критеріями
   const filteredSpecialists = specialistsData.filter((spec) => {
     return (
       (selectedGender === "Всі" || spec.gender === selectedGender) &&
