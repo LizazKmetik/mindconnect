@@ -76,56 +76,64 @@ export default function Vacancies() {
           Заповніть заявку на вакансію спеціаліста
         </Text>
 
-        <TextInput
-          placeholder="ПІБ"
-          style={styles.input}
-          value={form.pib}
-          onChangeText={(text) => handleChange("pib", text)}
-        />
-        <TextInput
-          placeholder="Email"
-          style={styles.input}
-          keyboardType="email-address"
-          value={form.email}
-          onChangeText={(text) => handleChange("email", text)}
-        />
-        <TextInput
-          placeholder="Телефон"
-          style={styles.input}
-          keyboardType="phone-pad"
-          value={form.phone}
-          onChangeText={(text) => handleChange("phone", text)}
-        />
-        <TextInput
-          placeholder="Спеціалізація"
-          style={styles.input}
-          value={form.specialization}
-          onChangeText={(text) => handleChange("specialization", text)}
-        />
-        <TextInput
-          placeholder="Стаж (років)"
-          style={styles.input}
-          keyboardType="numeric"
-          value={form.experience}
-          onChangeText={(text) => handleChange("experience", text)}
-        />
-        <TextInput
-          placeholder="Короткий опис про себе"
-          style={[styles.input, { height: 80 }]}
-          multiline
-          value={form.description}
-          onChangeText={(text) => handleChange("description", text)}
-        />
+        <View style={styles.formBox}>
+          <TextInput
+            placeholder="ПІБ"
+            style={styles.input}
+            value={form.pib}
+            onChangeText={(text) => handleChange("pib", text)}
+          />
+          <TextInput
+            placeholder="Email"
+            style={styles.input}
+            keyboardType="email-address"
+            value={form.email}
+            onChangeText={(text) => handleChange("email", text)}
+          />
+          <TextInput
+            placeholder="Телефон"
+            style={styles.input}
+            keyboardType="phone-pad"
+            value={form.phone}
+            onChangeText={(text) => handleChange("phone", text)}
+          />
+          <TextInput
+            placeholder="Спеціалізація"
+            style={styles.input}
+            value={form.specialization}
+            onChangeText={(text) => handleChange("specialization", text)}
+          />
+          <TextInput
+            placeholder="Стаж (років)"
+            style={styles.input}
+            keyboardType="numeric"
+            value={form.experience}
+            onChangeText={(text) => handleChange("experience", text)}
+          />
+          <TextInput
+            placeholder="Короткий опис про себе"
+            style={[styles.input, styles.textArea]}
+            multiline
+            value={form.description}
+            onChangeText={(text) => handleChange("description", text)}
+          />
 
-        <TouchableOpacity style={styles.button} onPress={handleSubmit}>
-          <Text style={styles.buttonText}>Відправити заявку</Text>
-        </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={handleSubmit}>
+            <Text style={styles.buttonText}>Відправити заявку</Text>
+          </TouchableOpacity>
 
-        <Animated.View style={[styles.messageBox, { opacity: fadeAnim }]}>
-          <Text style={[styles.messageText, { color: messageColor }]}>
-            {message}
+          <Animated.View style={[styles.messageBox, { opacity: fadeAnim }]}>
+            <Text style={[styles.messageText, { color: messageColor }]}>
+              {message}
+            </Text>
+          </Animated.View>
+        </View>
+
+        <View style={styles.footerTextContainer}>
+          <Text style={styles.footerText}>
+            Ми будем раді бачити тебе у нашій команді!
           </Text>
-        </Animated.View>
+        </View>
       </ScrollView>
     </KeyboardAvoidingView>
   );
@@ -135,35 +143,49 @@ const styles = StyleSheet.create({
   container: {
     padding: 20,
     paddingTop: 40,
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#F0F4FF",
     flexGrow: 1,
+    justifyContent: "center",
   },
   title: {
-    fontSize: 22,
-    marginBottom: 20,
+    fontSize: 24,
+    marginBottom: 25,
     fontWeight: "bold",
     textAlign: "center",
-    color: "#6C63FF",
+    color: "#5D50FE",
     fontFamily: "Comic Sans MS",
   },
-  input: {
+  formBox: {
     backgroundColor: "#fff",
+    padding: 20,
+    borderRadius: 16,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 4 },
+    shadowRadius: 8,
+    elevation: 5,
+  },
+  input: {
+    backgroundColor: "#F9F9F9",
     borderRadius: 10,
     paddingHorizontal: 15,
-    paddingVertical: 10,
+    paddingVertical: 12,
     marginBottom: 15,
     fontSize: 16,
     fontFamily: "Comic Sans MS",
     borderWidth: 1,
-    borderColor: "#ccc",
+    borderColor: "#ddd",
+  },
+  textArea: {
+    height: 100,
+    textAlignVertical: "top",
   },
   button: {
-    backgroundColor: "#6C63FF",
+    backgroundColor: "#5D50FE",
     paddingVertical: 15,
     borderRadius: 12,
     alignItems: "center",
     marginTop: 10,
-    marginBottom: 30,
   },
   buttonText: {
     color: "#fff",
@@ -172,11 +194,24 @@ const styles = StyleSheet.create({
   },
   messageBox: {
     alignItems: "center",
-    marginTop: -10,
+    marginTop: 15,
   },
   messageText: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: "bold",
+    fontFamily: "Comic Sans MS",
+  },
+  footerTextContainer: {
+    marginTop: 30,
+    marginBottom: 40,
+    alignItems: "center",
+    paddingHorizontal: 20,
+  },
+  footerText: {
+    color: "#5D50FE",
+    fontSize: 18,
+    fontStyle: "italic",
+    textAlign: "center",
     fontFamily: "Comic Sans MS",
   },
 });
