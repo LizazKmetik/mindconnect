@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 import {
-  View,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
   SafeAreaView,
+  View,
+  Image,
+  TouchableOpacity,
+  Text,
+  StyleSheet,
 } from "react-native";
+
+import Home from "./screens/Home";
+import Vacancies from "./screens/Vacancies";
+import Services from "./screens/Services";
+import About from "./screens/About";
+import Specialist from "./screens/Specialist"; // для примера, можно пока сделать пустой
+
+const logoImage = require("./img/logo.png");
 
 export default function App() {
   const [screen, setScreen] = useState("home");
@@ -13,20 +22,15 @@ export default function App() {
   const renderScreen = () => {
     switch (screen) {
       case "home":
-        return (
-          <>
-            <Text style={styles.title}>Пошук психолога</Text>
-            <TouchableOpacity style={styles.mainButton}>
-              <Text style={styles.mainButtonText}>Підібрати спеціаліста</Text>
-            </TouchableOpacity>
-          </>
-        );
+        return <Home onPickSpecialist={() => setScreen("specialist")} />;
+      case "specialist":
+        return <Specialist />;
       case "vacancies":
-        return <Text style={styles.title}>Вакансії</Text>;
+        return <Vacancies />;
       case "services":
-        return <Text style={styles.title}>Послуги</Text>;
+        return <Services />;
       case "about":
-        return <Text style={styles.title}>Про нас</Text>;
+        return <About />;
       default:
         return null;
     }
@@ -34,32 +38,70 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      {renderScreen()}
+      <View style={styles.logoContainer}>
+        <Image source={logoImage} style={styles.logo} resizeMode="contain" />
+      </View>
+
+      <View style={styles.content}>{renderScreen()}</View>
 
       <View style={styles.navBar}>
         <TouchableOpacity
           onPress={() => setScreen("home")}
-          style={styles.navButton}
+          style={[
+            styles.navButton,
+            screen === "home" && styles.navButtonActive,
+          ]}
         >
-          <Text>Головна</Text>
+          <Text
+            style={[styles.navText, screen === "home" && styles.navTextActive]}
+          >
+            Головна
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => setScreen("vacancies")}
-          style={styles.navButton}
+          style={[
+            styles.navButton,
+            screen === "vacancies" && styles.navButtonActive,
+          ]}
         >
-          <Text>Вакансії</Text>
+          <Text
+            style={[
+              styles.navText,
+              screen === "vacancies" && styles.navTextActive,
+            ]}
+          >
+            Вакансії
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => setScreen("services")}
-          style={styles.navButton}
+          style={[
+            styles.navButton,
+            screen === "services" && styles.navButtonActive,
+          ]}
         >
-          <Text>Послуги</Text>
+          <Text
+            style={[
+              styles.navText,
+              screen === "services" && styles.navTextActive,
+            ]}
+          >
+            Послуги
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => setScreen("about")}
-          style={styles.navButton}
+          style={[
+            styles.navButton,
+            screen === "about" && styles.navButtonActive,
+          ]}
         >
-          <Text>Про нас</Text>
+          <Text
+            style={[styles.navText, screen === "about" && styles.navTextActive]}
+          >
+            Про нас
+          </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -67,35 +109,40 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    justifyContent: "space-between",
+  container: { flex: 1, backgroundColor: "#F8F9FB" },
+  logoContainer: {
+    height: 90,
+    justifyContent: "center",
+    alignItems: "center",
+    borderBottomWidth: 1,
+    borderColor: "#E4E6EB",
+    paddingVertical: 10,
+    backgroundColor: "#fff",
   },
-  title: {
-    fontSize: 28,
-    textAlign: "center",
-    marginTop: 50,
-  },
-  mainButton: {
-    backgroundColor: "#007AFF",
-    padding: 15,
-    marginTop: 30,
-    borderRadius: 10,
-    alignSelf: "center",
-  },
-  mainButtonText: {
-    color: "#fff",
-    fontSize: 16,
-  },
+  logo: { width: 140, height: 60 },
+  content: { flex: 1 },
   navBar: {
     flexDirection: "row",
     justifyContent: "space-around",
-    paddingVertical: 10,
+    paddingVertical: 12,
     borderTopWidth: 1,
-    borderColor: "#ccc",
+    borderColor: "#E4E6EB",
+    backgroundColor: "#fff",
   },
   navButton: {
-    padding: 10,
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+    borderRadius: 10,
+  },
+  navButtonActive: {
+    backgroundColor: "#6C63FF",
+  },
+  navText: {
+    fontSize: 14,
+    color: "#555",
+    fontWeight: "500",
+  },
+  navTextActive: {
+    color: "#fff",
   },
 });
