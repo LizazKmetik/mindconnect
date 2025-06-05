@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     marginBottom: 25,
     fontWeight: "bold",
     textAlign: "center",
-    color: "#5D50FE",
+    color: "#7a63f9",
     fontFamily: "Comic Sans MS",
   },
   formBox: {
@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
     textAlignVertical: "top",
   },
   button: {
-    backgroundColor: "#5D50FE",
+    backgroundColor: "#7a63f9",
     paddingVertical: 15,
     borderRadius: 12,
     alignItems: "center",
@@ -208,7 +208,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   footerText: {
-    color: "#5D50FE",
+    color: "#7a63f9",
     fontSize: 18,
     fontStyle: "italic",
     textAlign: "center",

@@ -12,7 +12,7 @@ import Home from "./screens/Home";
 import Vacancies from "./screens/Vacancies";
 import Services from "./screens/Services";
 import About from "./screens/About";
-import Specialist from "./screens/Specialist"; // для примера, можно пока сделать пустой
+import Specialist from "./screens/Specialist";
 
 const logoImage = require("./img/logo.png");
 
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   navButtonActive: {
-    backgroundColor: "#6C63FF",
+    backgroundColor: "#7a63f9",
   },
   navText: {
     fontSize: 14,

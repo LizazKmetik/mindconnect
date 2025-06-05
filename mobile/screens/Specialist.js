@@ -155,7 +155,8 @@ export default function Specialists() {
               {item.gender} | {item.qualification} | {item.language}
             </Text>
             <Text style={styles.description}>
-              Теми: {item.topics.join(", ")} {"\n"}
+              Теми: {item.topics.join(", ")}
+              {"\n"}
               Підхід: {item.approach}
             </Text>
           </View>
@@ -177,7 +178,7 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 24,
     fontWeight: "700",
-    color: "#4b3b7f",
+    color: "#7a63f9",
     marginBottom: 15,
     textAlign: "center",
   },
@@ -185,7 +186,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   dropdownHeader: {
-    backgroundColor: "#6c63ff",
+    backgroundColor: "#7a63f9",
     paddingVertical: 12,
     paddingHorizontal: 15,
     borderRadius: 8,
@@ -216,14 +217,14 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginTop: 4,
     borderWidth: 1,
-    borderColor: "#6c63ff",
+    borderColor: "#7a63f9",
   },
   dropdownItem: {
     paddingVertical: 10,
     paddingHorizontal: 15,
   },
   dropdownItemSelected: {
-    backgroundColor: "#6c63ff",
+    backgroundColor: "#7a63f9",
   },
   dropdownItemText: {
     fontSize: 16,
@@ -246,7 +247,7 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 18,
     fontWeight: "700",
-    color: "#4b3b7f",
+    color: "#7a63f9",
   },
   info: {
     fontSize: 14,
