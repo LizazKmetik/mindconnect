@@ -23,26 +23,31 @@ export default function App() {
 
   const renderScreen = () => {
     switch (screen) {
-      case "home":
-        return <Home onPickSpecialist={() => setScreen("specialist")} />;
-      case "specialist":
-        return <Specialist />;
-      case "vacancies":
-        return <Vacancies />;
-      case "services":
-        return <Services />;
-      case "about":
-        return <About />;
       case "login":
         return (
           <Login
-            onLogin={(u) => {
-              setUser(u);
-              setScreen("home");
+            user={user}
+            onLogin={(loggedUser) => {
+              setUser(loggedUser);
             }}
-            currentUser={user}
+            onLogout={() => {
+              setUser(null);
+              setScreen("login");
+            }}
           />
         );
+      case "home":
+        return (
+          <Home onPickSpecialist={() => setScreen("specialist")} user={user} />
+        );
+      case "specialist":
+        return <Specialist user={user} />;
+      case "vacancies":
+        return <Vacancies user={user} />;
+      case "services":
+        return <Services user={user} />;
+      case "about":
+        return <About user={user} />;
       default:
         return null;
     }
