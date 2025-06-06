@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     try {
-        const response = await fetch('https://localhost:7253/api/psychologists');
+        const response = await fetch('http://localhost:5082/api/psychologists');
         const data = await response.json();
 
         if (data.length === 0) {

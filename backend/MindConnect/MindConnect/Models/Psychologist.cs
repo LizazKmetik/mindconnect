@@ -11,5 +11,7 @@ namespace MindConnect.Models
 
         public User User { get; set; } = null!;
         public PsychologistProfile Profile { get; set; } = null!;
+        public bool IsModeratorApproved { get; set; } = false;
+
     }
 }

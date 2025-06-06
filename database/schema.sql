@@ -33,7 +33,8 @@ CREATE TABLE Users (
     Role NVARCHAR(50) NOT NULL FOREIGN KEY REFERENCES UserRoles(RoleName),
     CreatedAt DATETIME DEFAULT GETDATE(),
     LastLogin DATETIME,
-    IsActive BIT DEFAULT 1
+    IsActive BIT DEFAULT 1,
+	PendingRole NVARCHAR(50) NULL
 );
 
 -- PSYCHOLOGIST PROFILE
@@ -46,14 +47,16 @@ CREATE TABLE PsychologistProfile (
     ExperienceYears INT,
     Education NVARCHAR(MAX),
     Certificates NVARCHAR(MAX), -- JSON array as string
-    ProfilePhoto NVARCHAR(255)
+    ProfilePhoto NVARCHAR(255),
+	Phone NVARCHAR(50)
 );
 
 -- PSYCHOLOGIST
 CREATE TABLE Psychologist (
     Id UNIQUEIDENTIFIER PRIMARY KEY FOREIGN KEY REFERENCES Users(Id),
     ProfileId UNIQUEIDENTIFIER FOREIGN KEY REFERENCES PsychologistProfile(Id),
-    Verified BIT DEFAULT 0
+    Verified BIT DEFAULT 0,
+	IsModeratorApproved BIT DEFAULT 0
 );
 
 -- TIMESLOT
@@ -131,10 +134,3 @@ CREATE TABLE Review (
     ReviewText NVARCHAR(MAX),
     CreatedAt DATETIME DEFAULT GETDATE()
 );
-
--- якщо вже ≥снуЇ таблиц€ PsychologistProfile, виконати наступн≥ команди дл€ оновленн€
---ALTER TABLE PsychologistProfile
---ADD Languages NVARCHAR(255);
-
---ALTER TABLE PsychologistProfile
---ADD PricePerSession DECIMAL(10,2);

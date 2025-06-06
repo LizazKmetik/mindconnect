@@ -11,6 +11,8 @@
         public string ProfilePhoto { get; set; } = "";
         public string Languages { get; set; } = "";
         public decimal PricePerSession { get; set; }
+        public string? Phone { get; set; }
+
 
     }
 }

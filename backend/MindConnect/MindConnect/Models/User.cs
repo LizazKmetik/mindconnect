@@ -10,6 +10,7 @@ namespace MindConnect.Models
         public string Email { get; set; } = null!;
         public string Password { get; set; } = null!;
         public string Role { get; set; } = "Client"!;
+        public string? PendingRole { get; set; }
         public UserRole RoleNavigation { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime? LastLogin { get; set; }

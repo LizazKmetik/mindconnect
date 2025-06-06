@@ -84,7 +84,7 @@ window.handleGoogleCredentialResponse = async function (response) {
         role = userFromDb.role;
       }
       if (userFromDb.name) {
-        name = userFromDb.name; // Використовуємо ім’я з бази
+        name = userFromDb.name;
       }
     } else {
       const createRes = await fetch("http://localhost:5082/api/users/google", {

@@ -55,7 +55,7 @@ namespace MindConnect.Controllers
                 Name = dto.Name,
                 Email = dto.Email,
                 Role = "Client",
-                Password = "", // або null, якщо дозволено
+                Password = "",
                 CreatedAt = DateTime.Now,
                 IsActive = true
             };

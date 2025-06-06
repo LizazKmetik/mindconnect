@@ -13,27 +13,29 @@
 
   <main>
     <h1 class="page-title">Заповніть заявку на вакансію спеціаліста</h1>
-    <form class="application-form" action="#" method="post">
-      <label for="fullname">ПІБ:</label>
-      <input type="text" id="fullname" name="fullname" required>
+    <form class="application-form" action="/api/psychologists/apply" method="post" enctype="multipart/form-data">
+  <label for="fullname">ПІБ:</label>
+  <input type="text" id="fullname" name="fullname" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+  <label for="phone">Телефон:</label>
+  <input type="tel" id="phone" name="phone" required>
 
-      <label for="phone">Телефон:</label>
-      <input type="tel" id="phone" name="phone" required>
+  <label for="specialty">Спеціалізація:</label>
+  <input type="text" id="specialty" name="specialty" required>
 
-      <label for="specialty">Спеціалізація:</label>
-      <input type="text" id="specialty" name="specialty" required>
+  <label for="startDate">Дата початку практики:</label>
+  <input type="date" id="startDate" name="startDate" required>
 
-      <label for="experience">Стаж (років):</label>
-      <input type="number" id="experience" name="experience" min="0" required>
 
-      <label for="message">Короткий опис про себе:</label>
-      <textarea id="message" name="message" rows="5"></textarea>
+  <label for="bio">Короткий опис про себе:</label>
+  <textarea id="bio" name="bio" rows="5"></textarea>
 
-      <button type="submit" class="submit-button">Відправити заявку</button>
-    </form>
+  <label for="certificates">Завантажити сертифікати (PDF, PNG, JPG):</label>
+  <input type="file" id="certificates" name="certificates" accept=".pdf,.png,.jpg,.jpeg" multiple required>
+
+  <button type="submit" class="submit-button">Відправити заявку</button>
+</form>
+
   </main>
 
   <footer>
@@ -63,6 +65,9 @@
   </footer>
 
   <script src="scripts/loadHeader.js"></script>
+  <!--<script src="scripts/submitApplication.js"></script>-->
+  <script src="scripts/vacancy_submit.js"></script>
+
 
 </body>
 </html>

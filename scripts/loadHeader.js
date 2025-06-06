@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const html = await response.text();
     headerPlaceholder.innerHTML = html;
 
-    // Тільки тепер #user-area існує — можемо наповнити
     const user = JSON.parse(localStorage.getItem("user"));
     const container = document.getElementById("user-area");
 

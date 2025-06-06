@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     menuButton.addEventListener("click", (e) => {
         dropdown.classList.toggle("show");
-        e.stopPropagation(); // не дає закрити меню одразу
+        e.stopPropagation();
     });
 
     document.addEventListener("click", () => {

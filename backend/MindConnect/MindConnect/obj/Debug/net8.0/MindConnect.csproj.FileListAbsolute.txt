@@ -256,3 +256,4 @@ C:\Work\mindconnect\backend\MindConnect\MindConnect\obj\Debug\net8.0\refint\Mind
 C:\Work\mindconnect\backend\MindConnect\MindConnect\obj\Debug\net8.0\MindConnect.pdb
 C:\Work\mindconnect\backend\MindConnect\MindConnect\obj\Debug\net8.0\MindConnect.genruntimeconfig.cache
 C:\Work\mindconnect\backend\MindConnect\MindConnect\obj\Debug\net8.0\ref\MindConnect.dll
+C:\Work\mindconnect\backend\MindConnect\MindConnect\bin\Debug\net8.0\MindConnect.staticwebassets.runtime.json

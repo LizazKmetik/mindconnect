@@ -1,70 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\",
+  "WorkspaceRootPath": "C:\\Work\\mindconnect\\backend\\MindConnect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\dto\\googleuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\dto\\googleuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\controllers\\psychologistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\controllers\\psychologistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\dto\\psychologistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\dto\\googleuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\dto\\googleuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\controllers\\psychologistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\controllers\\psychologistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\mindconnect.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\mindconnect.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\dto\\psychologistapplicationviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\dto\\psychologistapplicationviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\dto\\psychologistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\dto\\psychologistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\models\\psychologist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\models\\psychologist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\mindconnect.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\mindconnect.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\models\\psychologistprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\dto\\psychologistapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\dto\\psychologistapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\models\\psychologistprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\models\\psychologistprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\mindconnect\\backend\\mindconnect\\mindconnect\\models\\psychologist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\models\\psychologist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|c:\\work\\mindconnect\\backend\\mindconnect\\mindconnect\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{02A12CB5-2DCB-4CEA-9054-8120834B8B03}|MindConnect\\MindConnect.csproj|solutionrelative:mindconnect\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,184 +90,207 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "MindConnect\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "MindConnect\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAcwDsAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "PsychologistsController.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Controllers\\PsychologistsController.cs",
+              "RelativeDocumentMoniker": "MindConnect\\Controllers\\PsychologistsController.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Controllers\\PsychologistsController.cs",
+              "RelativeToolTip": "MindConnect\\Controllers\\PsychologistsController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwCIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T17:31:01.548Z"
+              "WhenOpened": "2025-05-27T02:48:03.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Models\\User.cs",
-              "RelativeDocumentMoniker": "MindConnect\\Models\\User.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Models\\User.cs",
-              "RelativeToolTip": "MindConnect\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T02:49:06.717Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PsychologistDto.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\DTO\\PsychologistDto.cs",
-              "RelativeDocumentMoniker": "MindConnect\\DTO\\PsychologistDto.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\DTO\\PsychologistDto.cs",
-              "RelativeToolTip": "MindConnect\\DTO\\PsychologistDto.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T02:51:12.057Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Program.cs",
-              "RelativeDocumentMoniker": "MindConnect\\Program.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Program.cs",
-              "RelativeToolTip": "MindConnect\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T02:56:54.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "MindConnect\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "MindConnect\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T02:53:28.869Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "MindConnect\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "MindConnect\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAADwv2MAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T21:48:14.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PsychologistsController.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Controllers\\PsychologistsController.cs",
-              "RelativeDocumentMoniker": "MindConnect\\Controllers\\PsychologistsController.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Controllers\\PsychologistsController.cs",
-              "RelativeToolTip": "MindConnect\\Controllers\\PsychologistsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T02:48:03.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "GoogleUserDto.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\DTO\\GoogleUserDto.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\GoogleUserDto.cs",
               "RelativeDocumentMoniker": "MindConnect\\DTO\\GoogleUserDto.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\DTO\\GoogleUserDto.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\GoogleUserDto.cs",
               "RelativeToolTip": "MindConnect\\DTO\\GoogleUserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T17:20:05.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRole.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Models\\UserRole.cs",
-              "RelativeDocumentMoniker": "MindConnect\\Models\\UserRole.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Models\\UserRole.cs",
-              "RelativeToolTip": "MindConnect\\Models\\UserRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\LoginDto.cs",
+              "RelativeDocumentMoniker": "MindConnect\\DTO\\LoginDto.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\LoginDto.cs",
+              "RelativeToolTip": "MindConnect\\DTO\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T09:35:04.329Z"
+              "WhenOpened": "2025-06-03T21:49:53.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "MindConnect\\DTO\\RegisterDto.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\RegisterDto.cs",
+              "RelativeToolTip": "MindConnect\\DTO\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:48:57.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "MindConnect\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "MindConnect\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T17:31:01.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MindConnect\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MindConnect\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAiwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T02:53:28.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "MindConnect\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "MindConnect\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAF4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:48:14.228Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\DTO\\LoginDto.cs",
-              "RelativeDocumentMoniker": "MindConnect\\DTO\\LoginDto.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\DTO\\LoginDto.cs",
-              "RelativeToolTip": "MindConnect\\DTO\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T21:49:53.001Z"
+              "Title": "MindConnect.csproj",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\MindConnect.csproj",
+              "RelativeDocumentMoniker": "MindConnect\\MindConnect.csproj",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\MindConnect.csproj",
+              "RelativeToolTip": "MindConnect\\MindConnect.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-06T11:33:34.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\DTO\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "MindConnect\\DTO\\RegisterDto.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\DTO\\RegisterDto.cs",
-              "RelativeToolTip": "MindConnect\\DTO\\RegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "PsychologistApplicationViewDto.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\PsychologistApplicationViewDto.cs",
+              "RelativeDocumentMoniker": "MindConnect\\DTO\\PsychologistApplicationViewDto.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\PsychologistApplicationViewDto.cs",
+              "RelativeToolTip": "MindConnect\\DTO\\PsychologistApplicationViewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T21:48:57.824Z"
+              "WhenOpened": "2025-06-05T15:26:48.294Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
+              "Title": "PsychologistDto.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\PsychologistDto.cs",
+              "RelativeDocumentMoniker": "MindConnect\\DTO\\PsychologistDto.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\PsychologistDto.cs",
+              "RelativeToolTip": "MindConnect\\DTO\\PsychologistDto.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T02:51:12.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Psychologist.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Models\\Psychologist.cs",
+              "RelativeDocumentMoniker": "MindConnect\\Models\\Psychologist.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Models\\Psychologist.cs",
+              "RelativeToolTip": "MindConnect\\Models\\Psychologist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T02:49:35.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "MindConnect\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Properties\\launchSettings.json",
               "RelativeToolTip": "MindConnect\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-03T23:17:31.455Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Psychologist.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Models\\Psychologist.cs",
-              "RelativeDocumentMoniker": "MindConnect\\Models\\Psychologist.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Models\\Psychologist.cs",
-              "RelativeToolTip": "MindConnect\\Models\\Psychologist.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Title": "PsychologistApplicationDto.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\PsychologistApplicationDto.cs",
+              "RelativeDocumentMoniker": "MindConnect\\DTO\\PsychologistApplicationDto.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\DTO\\PsychologistApplicationDto.cs",
+              "RelativeToolTip": "MindConnect\\DTO\\PsychologistApplicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T02:49:35.021Z"
+              "WhenOpened": "2025-06-05T15:45:43.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Program.cs",
+              "RelativeDocumentMoniker": "MindConnect\\Program.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Program.cs",
+              "RelativeToolTip": "MindConnect\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T02:56:54.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MindConnect.http",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\MindConnect.http",
+              "RelativeDocumentMoniker": "MindConnect\\MindConnect.http",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\MindConnect.http",
+              "RelativeToolTip": "MindConnect\\MindConnect.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-06T11:32:40.425Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "MindConnect\\appsettings.Development.json",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\appsettings.Development.json",
-              "RelativeToolTip": "MindConnect\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-03T23:17:21.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\appsettings.json",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\appsettings.json",
               "RelativeDocumentMoniker": "MindConnect\\appsettings.json",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\appsettings.json",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\appsettings.json",
               "RelativeToolTip": "MindConnect\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -259,15 +298,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "PsychologistProfile.cs",
-              "DocumentMoniker": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Models\\PsychologistProfile.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Models\\PsychologistProfile.cs",
               "RelativeDocumentMoniker": "MindConnect\\Models\\PsychologistProfile.cs",
-              "ToolTip": "C:\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440 (2 \u043A\u0443\u0440\u0441)\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0443\u043C\\vc code(project)\\MindConnect\\backend\\MindConnect\\MindConnect\\Models\\PsychologistProfile.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Models\\PsychologistProfile.cs",
               "RelativeToolTip": "MindConnect\\Models\\PsychologistProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwAwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T02:49:18.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Models\\User.cs",
+              "RelativeDocumentMoniker": "MindConnect\\Models\\User.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Models\\User.cs",
+              "RelativeToolTip": "MindConnect\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T02:49:06.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Models\\UserRole.cs",
+              "RelativeDocumentMoniker": "MindConnect\\Models\\UserRole.cs",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\Models\\UserRole.cs",
+              "RelativeToolTip": "MindConnect\\Models\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T09:35:04.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MindConnect\\appsettings.Development.json",
+              "ToolTip": "C:\\Work\\mindconnect\\backend\\MindConnect\\MindConnect\\appsettings.Development.json",
+              "RelativeToolTip": "MindConnect\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T23:17:21.327Z"
             }
           ]
         }

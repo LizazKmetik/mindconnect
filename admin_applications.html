@@ -12,27 +12,21 @@
   <div id="header-placeholder"></div>
 
   <main>
-    <h1 class="title">Заявки на вакансію психолога</h1>
+  <h1 class="title">Заявки на вакансію психолога</h1>
 
-    <div class="card">
-      <div class="summary">
-        <p><strong>ПІБ:</strong> Олександра Петренко</p>
-        <p><strong>Email:</strong> oleksandra@example.com</p>
-        <p><strong>Телефон:</strong> +380991112233</p>
-        <button class="toggle">Детальніше</button>
-      </div>
-      <div class="details hidden">
-        <p><strong>Спеціалізація:</strong> Когнітивно-поведінкова терапія</p>
-        <p><strong>Стаж:</strong> 5 років</p>
-        <p><strong>Опис:</strong> Маю досвід роботи з підлітками та дорослими. Працюю в напрямку CBT, використовую інструменти арт-терапії.</p>
-        <div class="actions">
-          <button class="accept">👍 Прийняти</button>
-          <button class="reject">👎 Відхилити</button>
-        </div>
-      </div>
-    </div>
+  <div class="filters">
+  <label for="filter-select"><strong>Фільтр заявок:</strong></label>
+  <select id="filter-select">
+    <option value="all">Усі заявки</option>
+    <option value="moderator">Схвалені модератором</option>
+    <option value="pending">Очікують перевірки</option>
+  </select>
+  </div>
 
-  </main>
+
+  <div id="applications-list"></div>
+</main>
+
 
   <footer>
   <div class="footer-section left">
@@ -71,6 +65,8 @@
   </script>
 
   <script src="scripts/loadHeader.js"></script>
+
+  <script src="scripts/admin_applications.js"></script>
 
 </body>
 </html>
