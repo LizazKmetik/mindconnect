@@ -14,6 +14,7 @@ import Services from "./screens/Services";
 import About from "./screens/About";
 import Specialist from "./screens/Specialist";
 import Login from "./screens/Login";
+import Other from "./screens/Other";
 
 const logoImage = require("./img/logo.png");
 
@@ -29,6 +30,7 @@ export default function App() {
             user={user}
             onLogin={(loggedUser) => {
               setUser(loggedUser);
+              setScreen("home");
             }}
             onLogout={() => {
               setUser(null);
@@ -48,6 +50,8 @@ export default function App() {
         return <Services user={user} />;
       case "about":
         return <About user={user} />;
+      case "other":
+        return <Other user={user} />;
       default:
         return null;
     }
@@ -68,64 +72,25 @@ export default function App() {
       <View style={styles.content}>{renderScreen()}</View>
 
       <View style={styles.navBar}>
-        <TouchableOpacity
-          onPress={() => setScreen("home")}
-          style={[
-            styles.navButton,
-            screen === "home" && styles.navButtonActive,
-          ]}
-        >
-          <Text
-            style={[styles.navText, screen === "home" && styles.navTextActive]}
+        {[
+          { label: "Головна", key: "home" },
+          { label: "Вакансії", key: "vacancies" },
+          { label: "Послуги", key: "services" },
+          { label: "Про нас", key: "about" },
+          { label: "Інше", key: "other" },
+        ].map(({ label, key }) => (
+          <TouchableOpacity
+            key={key}
+            onPress={() => setScreen(key)}
+            style={[styles.navButton, screen === key && styles.navButtonActive]}
           >
-            Головна
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => setScreen("vacancies")}
-          style={[
-            styles.navButton,
-            screen === "vacancies" && styles.navButtonActive,
-          ]}
-        >
-          <Text
-            style={[
-              styles.navText,
-              screen === "vacancies" && styles.navTextActive,
-            ]}
-          >
-            Вакансії
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => setScreen("services")}
-          style={[
-            styles.navButton,
-            screen === "services" && styles.navButtonActive,
-          ]}
-        >
-          <Text
-            style={[
-              styles.navText,
-              screen === "services" && styles.navTextActive,
-            ]}
-          >
-            Послуги
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => setScreen("about")}
-          style={[
-            styles.navButton,
-            screen === "about" && styles.navButtonActive,
-          ]}
-        >
-          <Text
-            style={[styles.navText, screen === "about" && styles.navTextActive]}
-          >
-            Про нас
-          </Text>
-        </TouchableOpacity>
+            <Text
+              style={[styles.navText, screen === key && styles.navTextActive]}
+            >
+              {label}
+            </Text>
+          </TouchableOpacity>
+        ))}
       </View>
     </SafeAreaView>
   );
