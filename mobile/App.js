@@ -13,11 +13,13 @@ import Vacancies from "./screens/Vacancies";
 import Services from "./screens/Services";
 import About from "./screens/About";
 import Specialist from "./screens/Specialist";
+import Login from "./screens/Login";
 
 const logoImage = require("./img/logo.png");
 
 export default function App() {
   const [screen, setScreen] = useState("home");
+  const [user, setUser] = useState(null);
 
   const renderScreen = () => {
     switch (screen) {
@@ -31,6 +33,16 @@ export default function App() {
         return <Services />;
       case "about":
         return <About />;
+      case "login":
+        return (
+          <Login
+            onLogin={(u) => {
+              setUser(u);
+              setScreen("home");
+            }}
+            currentUser={user}
+          />
+        );
       default:
         return null;
     }
@@ -40,6 +52,12 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <View style={styles.logoContainer}>
         <Image source={logoImage} style={styles.logo} resizeMode="contain" />
+        <TouchableOpacity
+          onPress={() => setScreen("login")}
+          style={styles.profileIcon}
+        >
+          <Text style={{ fontSize: 22 }}>👤</Text>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.content}>{renderScreen()}</View>
@@ -120,6 +138,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   logo: { width: 140, height: 60 },
+  profileIcon: {
+    position: "absolute",
+    right: 15,
+    top: 43,
+  },
   content: { flex: 1 },
   navBar: {
     flexDirection: "row",
