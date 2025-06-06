@@ -5,8 +5,16 @@ import {
   StyleSheet,
   TouchableOpacity,
   FlatList,
-  ScrollView,
+  LayoutAnimation,
+  Platform,
+  UIManager,
+  Image,
 } from "react-native";
+
+if (Platform.OS === "android") {
+  UIManager.setLayoutAnimationEnabledExperimental &&
+    UIManager.setLayoutAnimationEnabledExperimental(true);
+}
 
 const filters = {
   Пол: ["Всі", "Жіноча", "Чоловіча"],
@@ -25,6 +33,7 @@ const specialistsData = [
     topics: ["Стрес", "Сім'я"],
     approach: "Когнітивний",
     language: "Українська",
+    image: require("../img/iryna.jpg"),
   },
   {
     id: "2",
@@ -34,6 +43,7 @@ const specialistsData = [
     topics: ["Кар'єра"],
     approach: "Гуманістичний",
     language: "Українська",
+    image: require("../img/maksos.jpg"),
   },
   {
     id: "3",
@@ -43,6 +53,7 @@ const specialistsData = [
     topics: ["Стрес"],
     approach: "Психодинамічний",
     language: "Англійська",
+    image: require("../img/olena.jpg"),
   },
 ];
 
@@ -61,30 +72,28 @@ function Dropdown({ label, options, selected, onSelect }) {
       </TouchableOpacity>
       {open && (
         <View style={styles.dropdownList}>
-          <ScrollView style={{ maxHeight: 120 }}>
-            {options.map((opt) => (
-              <TouchableOpacity
-                key={opt}
+          {options.map((opt) => (
+            <TouchableOpacity
+              key={opt}
+              style={[
+                styles.dropdownItem,
+                opt === selected && styles.dropdownItemSelected,
+              ]}
+              onPress={() => {
+                onSelect(opt);
+                setOpen(false);
+              }}
+            >
+              <Text
                 style={[
-                  styles.dropdownItem,
-                  opt === selected && styles.dropdownItemSelected,
+                  styles.dropdownItemText,
+                  opt === selected && styles.dropdownItemTextSelected,
                 ]}
-                onPress={() => {
-                  onSelect(opt);
-                  setOpen(false);
-                }}
               >
-                <Text
-                  style={[
-                    styles.dropdownItemText,
-                    opt === selected && styles.dropdownItemTextSelected,
-                  ]}
-                >
-                  {opt}
-                </Text>
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
+                {opt}
+              </Text>
+            </TouchableOpacity>
+          ))}
         </View>
       )}
     </View>
@@ -97,6 +106,14 @@ export default function Specialists() {
   const [selectedTopics, setSelectedTopics] = useState("Всі");
   const [selectedApproach, setSelectedApproach] = useState("Всі");
   const [selectedLanguage, setSelectedLanguage] = useState("Всі");
+  const [selectedSpecialist, setSelectedSpecialist] = useState(null);
+  const [bookingOpen, setBookingOpen] = useState(false);
+  const [selectedDay, setSelectedDay] = useState(null);
+  const [selectedTime, setSelectedTime] = useState(null);
+  const [confirmed, setConfirmed] = useState(false);
+
+  const days = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Нд"];
+  const times = ["09:00", "11:00", "13:00", "15:00", "17:00"];
 
   const filteredSpecialists = specialistsData.filter((spec) => {
     return (
@@ -109,10 +126,21 @@ export default function Specialists() {
     );
   });
 
-  return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Спеціалісти MindConnect</Text>
+  const handleBookPress = () => {
+    LayoutAnimation.easeInEaseOut();
+    setBookingOpen(true);
+  };
 
+  const handleConfirm = () => {
+    if (selectedDay && selectedTime) {
+      LayoutAnimation.easeInEaseOut();
+      setConfirmed(true);
+    }
+  };
+
+  const renderFilters = () => (
+    <View>
+      <Text style={styles.header}>Спеціалісти MindConnect</Text>
       <Dropdown
         label="Пол"
         options={filters.Пол}
@@ -143,29 +171,158 @@ export default function Specialists() {
         selected={selectedLanguage}
         onSelect={setSelectedLanguage}
       />
-
-      <FlatList
-        data={filteredSpecialists}
-        keyExtractor={(item) => item.id}
-        style={{ marginTop: 20 }}
-        renderItem={({ item }) => (
-          <View style={styles.card}>
-            <Text style={styles.name}>{item.name}</Text>
-            <Text style={styles.info}>
-              {item.gender} | {item.qualification} | {item.language}
-            </Text>
-            <Text style={styles.description}>
-              Теми: {item.topics.join(", ")}
-              {"\n"}
-              Підхід: {item.approach}
-            </Text>
-          </View>
-        )}
-        ListEmptyComponent={
-          <Text style={styles.noResults}>Спеціалісти не знайдені</Text>
-        }
-      />
     </View>
+  );
+
+  if (selectedSpecialist) {
+    return (
+      <View style={[styles.container, { paddingBottom: 30 }]}>
+        <View style={styles.card}>
+          <View style={styles.headerRow}>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.name}>{selectedSpecialist.name}</Text>
+              <Text style={styles.info}>
+                {selectedSpecialist.gender} | {selectedSpecialist.qualification}{" "}
+                | {selectedSpecialist.language}
+              </Text>
+            </View>
+            <Image
+              source={selectedSpecialist.image}
+              style={styles.avatarSmall}
+            />
+          </View>
+
+          <Text style={styles.description}>
+            Теми: {selectedSpecialist.topics.join(", ")}
+            {"\n"}Підхід: {selectedSpecialist.approach}
+          </Text>
+
+          {!bookingOpen && (
+            <TouchableOpacity
+              style={styles.bookButton}
+              onPress={handleBookPress}
+            >
+              <Text style={styles.bookButtonText}>Забронювати</Text>
+            </TouchableOpacity>
+          )}
+
+          {bookingOpen && !confirmed && (
+            <View style={{ marginTop: 20 }}>
+              <Text style={styles.sectionTitle}>Оберіть день:</Text>
+              <View style={styles.selectRow}>
+                {days.map((day) => (
+                  <TouchableOpacity
+                    key={day}
+                    style={[
+                      styles.selectItem,
+                      selectedDay === day && styles.selectedItem,
+                    ]}
+                    onPress={() => setSelectedDay(day)}
+                  >
+                    <Text
+                      style={[
+                        styles.selectText,
+                        selectedDay === day && styles.selectedText,
+                      ]}
+                    >
+                      {day}
+                    </Text>
+                  </TouchableOpacity>
+                ))}
+              </View>
+
+              <Text style={styles.sectionTitle}>Оберіть час:</Text>
+              <View style={styles.selectRow}>
+                {times.map((time) => (
+                  <TouchableOpacity
+                    key={time}
+                    style={[
+                      styles.selectItem,
+                      selectedTime === time && styles.selectedItem,
+                    ]}
+                    onPress={() => setSelectedTime(time)}
+                  >
+                    <Text
+                      style={[
+                        styles.selectText,
+                        selectedTime === time && styles.selectedText,
+                      ]}
+                    >
+                      {time}
+                    </Text>
+                  </TouchableOpacity>
+                ))}
+              </View>
+
+              <TouchableOpacity
+                style={styles.confirmButton}
+                onPress={handleConfirm}
+              >
+                <Text style={styles.confirmButtonText}>Підтвердити</Text>
+              </TouchableOpacity>
+            </View>
+          )}
+
+          {confirmed && (
+            <View style={{ marginTop: 30, alignItems: "center" }}>
+              <Text
+                style={{ fontSize: 20, color: "#7a63f9", fontWeight: "700" }}
+              >
+                🎉 Дякуємо за бронювання!
+              </Text>
+              <TouchableOpacity
+                onPress={() => {
+                  LayoutAnimation.easeInEaseOut();
+                  setSelectedSpecialist(null);
+                  setBookingOpen(false);
+                  setConfirmed(false);
+                  setSelectedDay(null);
+                  setSelectedTime(null);
+                }}
+                style={{ marginTop: 15 }}
+              >
+                <Text style={{ color: "#555" }}>⬅ Назад до списку</Text>
+              </TouchableOpacity>
+            </View>
+          )}
+        </View>
+      </View>
+    );
+  }
+
+  return (
+    <FlatList
+      style={styles.container}
+      data={filteredSpecialists}
+      keyExtractor={(item) => item.id}
+      ListHeaderComponent={renderFilters}
+      renderItem={({ item }) => (
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => {
+            setSelectedSpecialist(item);
+            LayoutAnimation.easeInEaseOut();
+          }}
+        >
+          <View style={styles.headerRow}>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.name}>{item.name}</Text>
+              <Text style={styles.info}>
+                {item.gender} | {item.qualification} | {item.language}
+              </Text>
+            </View>
+            <Image source={item.image} style={styles.avatarSmall} />
+          </View>
+          <Text style={styles.description}>
+            Теми: {item.topics.join(", ")}
+            {"\n"}Підхід: {item.approach}
+          </Text>
+        </TouchableOpacity>
+      )}
+      ListEmptyComponent={
+        <Text style={styles.noResults}>Спеціалісти не знайдені</Text>
+      }
+    />
   );
 }
 
@@ -244,6 +401,18 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     shadowOffset: { width: 0, height: 3 },
   },
+  headerRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 10,
+  },
+  avatarSmall: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    marginLeft: 10,
+  },
   name: {
     fontSize: 18,
     fontWeight: "700",
@@ -252,7 +421,7 @@ const styles = StyleSheet.create({
   info: {
     fontSize: 14,
     color: "#888",
-    marginVertical: 6,
+    marginTop: 4,
   },
   description: {
     fontSize: 14,
@@ -263,5 +432,57 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: "center",
     color: "#999",
+  },
+  bookButton: {
+    backgroundColor: "#7a63f9",
+    padding: 12,
+    borderRadius: 8,
+    marginTop: 10,
+  },
+  bookButtonText: {
+    color: "#fff",
+    textAlign: "center",
+    fontWeight: "600",
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: "600",
+    marginTop: 15,
+    marginBottom: 8,
+  },
+  selectRow: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 8,
+  },
+  selectItem: {
+    backgroundColor: "#ddd",
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 6,
+    marginBottom: 8,
+    marginRight: 8,
+  },
+  selectedItem: {
+    backgroundColor: "#7a63f9",
+  },
+  selectText: {
+    color: "#333",
+  },
+  selectedText: {
+    color: "#fff",
+    fontWeight: "600",
+  },
+  confirmButton: {
+    backgroundColor: "#4caf50",
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    marginTop: 20,
+  },
+  confirmButtonText: {
+    color: "#fff",
+    textAlign: "center",
+    fontWeight: "700",
   },
 });
